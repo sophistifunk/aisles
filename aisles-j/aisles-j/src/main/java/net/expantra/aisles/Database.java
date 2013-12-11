@@ -11,6 +11,7 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 public interface Database {
-    RecordIdentifier insertRecord(String recordSet, List<Map<String, DBValue>>contents);
-
+    RecordIdentifier insertRecord(String recordSet, Map<String, DBValue>record);
+    List<RecordIdentifier> retrieveRecordIdentifiers(String recordSet);
+//    List<Map<String, DBValue>> retrieveRecordContentsAsList(String recordSet);
 }
